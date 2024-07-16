@@ -2,6 +2,9 @@
 
 [![npm version](https://badge.fury.io/js/backblaze-b2.svg)](https://badge.fury.io/js/backblaze-b2) [![Build Status](https://travis-ci.org/yakovkhalinsky/backblaze-b2.svg?branch=master)](https://travis-ci.org/yakovkhalinsky/backblaze-b2)
 
+> [!CAUTION]
+> NOTE!: THIS IS JUST A FORK OF YAKOVKHALINSKY'S BACKBLAZE-B2 NPM PACKAGE WITH THE SOLE PURPOSE OF ADDING FILEINFO TO THE STARTLARGEFILE ENDPOINT.
+
 A customizable B2 client for Node.js:
 
 * Uses [axios](https://github.com/axios/axios). You can control the axios instance at the request level (see `axios` and `axiosOverride` config arguments) and at the global level (see `axios` config argument at instantiation) so you can use any axios feature.
