@@ -10,7 +10,7 @@
         "lint-test": "eslint \"test/**/*.js\"",
         "lint-all" : "eslint \"lib/**/*.js\" && eslint \"test/**/*.js\"",
         "lint-fix": "eslint \"lib/**/*.js\" --fix && eslint \"test/**/*.js\" --fix",
-        "generate-types": "typescript tsc -p tsconfig.json --declaration --allowJs --emitDeclarationOnly --outDir types --skipLibCheck"
+        "generate-types": "tsc -p tsconfig.json --declaration --allowJs --emitDeclarationOnly --outDir types --skipLibCheck"
     },
     "keywords": [
         "backblaze",
