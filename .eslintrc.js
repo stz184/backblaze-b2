@@ -1,25 +1,25 @@
 module.exports = {
-    "rules": {
-        "indent": [
+    'rules': {
+        'indent': [
             2,
             4
         ],
-        "quotes": [
+        'quotes': [
             2,
-            "single"
+            'single'
         ],
-        "linebreak-style": [
+        'linebreak-style': [
             2,
-            "unix"
+            'unix'
         ],
-        "semi": [
+        'semi': [
             2,
-            "always"
+            'always'
         ]
     },
-    "env": {
+    'env': {
         es6: true,
-        "node": true
+        'node': true
     },
-    "extends": "eslint:recommended"
+    'extends': 'eslint:recommended'
 };
