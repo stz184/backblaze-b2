@@ -23,7 +23,7 @@ describe('actions/key', function() {
         };
 
         bogusRequestModule = function(options, cb) {
-            let deferred = new utils.Deferred();
+            const deferred = new utils.Deferred();
             requestOptions = options;
             cb(errorMessage, false, JSON.stringify(response), deferred);
 

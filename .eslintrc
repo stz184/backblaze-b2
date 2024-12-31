@@ -1,0 +1,28 @@
+{
+    "extends": [
+        "eslint:recommended"
+    ],
+    "plugins": [
+        "prefer-let"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "spread": true
+        }
+    },
+    "env": {
+        "node": true,
+        "es6": true,
+        "jest": true
+    },
+    "rules": {
+        "no-var": 0,
+        "prefer-const": ["error", {
+            "destructuring": "all",
+            "ignoreReadBeforeAssign": true
+        }],
+        "no-inner-declarations": 0
+    }
+}

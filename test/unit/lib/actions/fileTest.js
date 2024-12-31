@@ -5,13 +5,13 @@ var request = require('../../../../lib/request');
 var file = require('../../../../lib/actions/file');
 
 describe('actions/file', function() {
-    var requestOptions;
-    var bogusRequestModule;
-    var response;
-    var actualResponse;
-    var errorMessage;
-    var b2;
-    var options;
+    let requestOptions;
+    let bogusRequestModule;
+    let response;
+    let actualResponse;
+    let errorMessage;
+    let b2;
+    let options;
 
     beforeEach(function() {
         errorMessage = undefined;
@@ -337,7 +337,8 @@ describe('actions/file', function() {
                     method: 'POST',
                     headers:
                     {
-                        Authorization: 'unicorns and rainbows'
+                        Authorization: 'unicorns and rainbows',
+                        "X-Bz-Content-Sha1": null
                     },
                     data: {
                         bucketId: '123abc',
@@ -397,13 +398,14 @@ describe('actions/file', function() {
                     method: 'POST',
                     headers:
                     {
-                        Authorization: 'unicorns and rainbows'
+                        Authorization: 'unicorns and rainbows',
                     },
                     data: {
                         bucketId: '123abc',
                         startFileName: 'unicorns.png',
                         startFileId: 'someID',
-                        maxFileCount: 200
+                        maxFileCount: 200,
+                        prefix: ''
                     }
                 });
                 expect(actualResponse).to.eql(response);
