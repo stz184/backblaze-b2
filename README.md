@@ -96,12 +96,12 @@ b2.authorize({
     // ...common arguments (optional)
 });  // returns promise
 
-// create bucket
-b2.createBucket({
-    bucketName: 'bucketName',
-    bucketType: 'bucketType' // one of `allPublic`, `allPrivate`
-    // ...common arguments (optional)
-});  // returns promise
+    // create bucket
+    b2.createBucket(
+      bucketName,
+      bucketType, // one of `allPublic`, `allPrivate`
+      bucketInfo // optional info object to be stored with the bucket. Useful for setting cache control: { "Cache-Control": "max-age=600" }
+    );  // returns promise
 
 // delete bucket
 b2.deleteBucket({
@@ -121,12 +121,8 @@ b2.getBucket({
     // ...common arguments (optional)
 });  // returns promise
 
-// update bucket
-b2.updateBucket({
-    bucketId: 'bucketId',
-    bucketType: 'bucketType'
-    // ...common arguments (optional)
-});  // returns promise
+// update bucket2
+b2.updateBucket(bucketId, bucketType, bucketInfo);  // returns promise
 
 // get upload url
 b2.getUploadUrl({
