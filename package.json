@@ -4,11 +4,11 @@
     "description": "Node.js Library for the Backblaze B2 Storage Service",
     "main": "index.js",
     "scripts": {
-        "test": "npm run lint-all && npm run test-unit",
-        "test-unit": "mocha \"test/**/*Test.js\"",
+        "test": "mocha \"test/**/*Test.js\" --reporter spec",
+        "cover": "istanbul cover mocha -- -R spec \"test/**/*Test.js\"",
         "lint-lib": "eslint \"lib/**/*.js\" ",
         "lint-test": "eslint \"test/**/*.js\"",
-        "lint-all": "npm run lint-lib && npm run lint-test",
+        "lint-all" : "eslint \"lib/**/*.js\" && eslint \"test/**/*.js\"",
         "lint-fix": "eslint \"lib/**/*.js\" --fix && eslint \"test/**/*.js\" --fix",
         "generate-types": "typescript tsc -p tsconfig.json --declaration --allowJs --emitDeclarationOnly --outDir types --skipLibCheck"
     },
@@ -31,9 +31,11 @@
     },
     "license": "MIT",
     "devDependencies": {
+        "coveralls": "^3.1.1",
         "eslint": "^7.28.0",
         "eslint-plugin-prefer-let": "^3.0.1",
         "expect.js": "^0.3.1",
+        "istanbul": "^0.4.5",
         "mocha": "^8.4.0"
     },
     "dependencies": {
