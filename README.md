@@ -1,6 +1,8 @@
 # Backblaze B2 Node.js Library
 
-[![npm version](https://badge.fury.io/js/backblaze-b2.svg)](https://badge.fury.io/js/backblaze-b2) [![Build Status](https://travis-ci.org/yakovkhalinsky/backblaze-b2.svg?branch=master)](https://travis-ci.org/yakovkhalinsky/backblaze-b2)
+[![npm version](https://badge.fury.io/js/@stz184%2Fbackblaze-b2.svg)](https://badge.fury.io/js/@stz184%backblaze-b2) [![Node.js CI](https://github.com/stz184/backblaze-b2/actions/workflows/node.js.yml/badge.svg)](https://github.com/stz184/backblaze-b2/actions/workflows/node.js.yml)
+
+
 
 A customizable B2 client for Node.js:
 
