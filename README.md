@@ -3,7 +3,6 @@
 [![npm version](https://badge.fury.io/js/@stz184%2Fbackblaze-b2.svg)](https://badge.fury.io/js/@stz184%backblaze-b2) [![Node.js CI](https://github.com/stz184/backblaze-b2/actions/workflows/node.js.yml/badge.svg)](https://github.com/stz184/backblaze-b2/actions/workflows/node.js.yml)
 
 
-
 A customizable B2 client for Node.js:
 
 * Uses [axios](https://github.com/axios/axios). You can control the axios instance at the request level (see `axios` and `axiosOverride` config arguments) and at the global level (see `axios` config argument at instantiation) so you can use any axios feature.
