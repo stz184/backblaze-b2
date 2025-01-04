@@ -18,17 +18,17 @@
         "b2",
         "storage"
     ],
-    "homepage": "https://github.com/yakovkhalinsky/backblaze-b2",
+    "homepage": "https://github.com/stz184/backblaze-b2",
     "author": {
-        "name": "Yakov Khalinsky",
-        "email": "yakov@therocketsurgeon.com"
+        "name": "Vladimir Ivanov",
+        "email": "info@Vladimir-ivanov.net"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/yakovkhalinsky/backblaze-b2.git"
+        "url": "https://github.com/stz184/backblaze-b2.git"
     },
     "bugs": {
-        "url": "https://github.com/yakovkhalinsky/backblaze-b2/issues"
+        "url": "https://github.com/stz184/backblaze-b2/issues"
     },
     "license": "MIT",
     "devDependencies": {
